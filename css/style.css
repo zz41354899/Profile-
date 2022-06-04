@@ -1,0 +1,130 @@
+/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    background: var(--bg);
+}
+/* root */
+:root{
+    --Purple:#31058E;
+    --round:20px;
+    --bg:#E8EAFD;
+    --col: #000;
+}
+
+
+/* wrap */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 40px auto;
+}
+
+/* header */
+.card-box{
+    width: 414px;
+    border-radius: 20px;
+    box-shadow: 0 16px 16px rgba(141, 255, 248, 0.25);
+}
+
+.showcase{
+    position: relative;
+    height: 35vh;
+    background: url(/img/cover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.showcase img{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* content */
+.content{
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.card-box h2{
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.heading{
+    color: var(--Purple);
+}
+.card-box p{
+    font-size: 18px;
+}
+
+/* icons */
+.icons{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i{
+    color: #000;
+    margin-left: 30px;
+    font-size: 36px;
+}
+.icons i:hover{
+    color: var(--Purple);
+}
+/* botton */
+.button-container{
+    width: 70%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.button {
+    border-radius: 30px;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    background: #000;
+}
+
+.button:hover{
+    background: #31058E;
+    color: #fff;
+}
+
+/* footer */
+.footer {
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    color: var(--Purple);
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    font-size: 24px;
+}
+.footer i{
+    font-size: 36px;
+}
